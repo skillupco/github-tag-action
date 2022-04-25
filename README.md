@@ -1,10 +1,12 @@
 # github-tag-action
 
+## This fork aims at fixing known issues
+
 A Github Action to automatically bump and tag master, on merge, with the latest SemVer formatted version.
 
-[![Build Status](https://github.com/anothrNick/github-tag-action/workflows/Bump%20version/badge.svg)](https://github.com/anothrNick/github-tag-action/workflows/Bump%20version/badge.svg)
-[![Stable Version](https://img.shields.io/github/v/tag/anothrNick/github-tag-action)](https://img.shields.io/github/v/tag/anothrNick/github-tag-action)
-[![Latest Release](https://img.shields.io/github/v/release/anothrNick/github-tag-action?color=%233D9970)](https://img.shields.io/github/v/release/anothrNick/github-tag-action?color=%233D9970)
+[![Build Status](https://github.com/skillupco/github-tag-action/workflows/Bump%20version/badge.svg)](https://github.com/skillupco/github-tag-action/workflows/Bump%20version/badge.svg)
+[![Stable Version](https://img.shields.io/github/v/tag/skillupco/github-tag-action)](https://img.shields.io/github/v/tag/skillupco/github-tag-action)
+[![Latest Release](https://img.shields.io/github/v/release/skillupco/github-tag-action?color=%233D9970)](https://img.shields.io/github/v/release/skillupco/github-tag-action?color=%233D9970)
 
 > Medium Post: [Creating A Github Action to Tag Commits](https://itnext.io/creating-a-github-action-to-tag-commits-2722f1560dec)
 
@@ -26,7 +28,7 @@ jobs:
       with:
         fetch-depth: '0'
     - name: Bump version and push tag
-      uses: anothrNick/github-tag-action@1.36.0
+      uses: skillupco/github-tag-action@1.39.0-skco
       env:
         GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         WITH_V: true
